@@ -1,24 +1,27 @@
-import { ArrowUpRight, Image } from "lucide-react";
+import { ArrowUpRight, Image, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "Renaissance Jewel",
-    subtitle: "Luxury E-commerce",
-    description: "A premium Shopify store with custom theme development, advanced filtering, and seamless checkout experience.",
-    tags: ["Shopify", "Liquid", "Custom Theme"],
+    title: "Civia Jewels",
+    subtitle: "Global Jewelry Brand",
+    description: "Scalable e-commerce architecture designed for international sales. Features multi-currency support, Liquid coding for variant switching, and premium UX focus to increase average order value (AOV).",
+    tags: ["Shopify", "Liquid", "Meta Ads"],
+    link: "https://civiajewels.com/",
   },
   {
-    title: "2026 Coastal Planner",
-    subtitle: "High-Ticket Digital Product",
-    description: "E-commerce funnel for a premium digital product with automated delivery and upsell sequences.",
-    tags: ["Shopify", "n8n", "Meta Ads"],
+    title: "Durvasa Diamond",
+    subtitle: "High-Ticket E-commerce",
+    description: "Trust-optimized storefront for high-value lab-grown diamond sales. Integrated complex data structures using Shopify Metaobjects for detailed diamond specifications and automated inventory workflows.",
+    tags: ["Shopify Plus", "SEO", "Automation"],
+    link: "https://durvasadiamond.com/",
   },
   {
-    title: "Client Dashboard",
-    subtitle: "Full-Stack Web App",
-    description: "Custom client portal with real-time analytics, automated reporting, and integrated payment processing.",
-    tags: ["React", "Node.js", "Supabase"],
+    title: "Trend Looker",
+    subtitle: "Fashion & Accessories",
+    description: "High-performance fashion store focused on speed and Conversion Rate Optimization (CRO). Integrated with Meta Pixel for precise ad targeting and growth tracking.",
+    tags: ["Shopify", "CRO", "Meta Pixel"],
+    link: "https://trendlooker.com/",
   },
 ];
 
@@ -29,12 +32,12 @@ const ProjectsSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <span className="text-primary text-sm font-medium uppercase tracking-wider">Portfolio</span>
+            <span className="text-primary text-sm font-medium uppercase tracking-wider">Case Studies</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mt-2">
               Featured <span className="gradient-text-blue">Projects</span>
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              A selection of projects showcasing our expertise in e-commerce, automation, and full-stack development.
+              Real client work showcasing our expertise in e-commerce architecture, automation, and conversion optimization.
             </p>
           </div>
 
@@ -83,9 +86,13 @@ const ProjectsSection = () => {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="w-full border-border hover:bg-muted text-foreground"
+                    className="w-full border-border hover:bg-muted text-foreground group/btn"
+                    asChild
                   >
-                    View Case Study
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      Visit Live Site
+                      <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-0.5" />
+                    </a>
                   </Button>
                 </div>
               </div>
