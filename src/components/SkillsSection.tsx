@@ -38,9 +38,9 @@ const SkillsSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <span className="text-primary text-sm font-medium uppercase tracking-wider">What I Do</span>
+            <span className="text-primary text-sm font-medium uppercase tracking-wider">What We Do</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mt-2">
-              The <span className="gradient-text-blue">Skill Stack</span>
+              Our <span className="gradient-text-blue">Services</span>
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
               A unique blend of technical expertise and business acumen to build systems that scale.

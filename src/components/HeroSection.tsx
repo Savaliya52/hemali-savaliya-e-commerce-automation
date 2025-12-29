@@ -32,14 +32,12 @@ const HeroSection = () => {
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-            I Build{" "}
-            <span className="gradient-text-blue">Automated E-commerce Systems</span>
-            , Not Just Websites.
+            <span className="gradient-text-blue">Enterprise-Grade</span> Shopify & Automation Solutions.
           </h1>
 
           {/* Sub-headline */}
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            Specializing in <span className="text-foreground font-medium">Shopify Development</span>, <span className="text-foreground font-medium">MERN Stack</span>, and <span className="text-foreground font-medium">n8n Automation</span>. I help brands scale by connecting Code, Marketing, and Operations.
+            <span className="text-foreground font-medium">Savaliya Digital</span> connects code, marketing, and operations. We build high-performance systems for scaling brands.
           </p>
 
           {/* CTAs */}
@@ -49,7 +47,7 @@ const HeroSection = () => {
               onClick={() => scrollToSection("projects")}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-base font-medium group"
             >
-              View My Work
+              View Our Work
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button
@@ -58,7 +56,7 @@ const HeroSection = () => {
               onClick={() => scrollToSection("contact")}
               className="border-border hover:bg-muted text-foreground px-8 py-6 text-base font-medium"
             >
-              Contact Me
+              Contact Us
             </Button>
           </div>
 
