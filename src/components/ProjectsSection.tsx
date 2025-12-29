@@ -34,7 +34,7 @@ const ProjectsSection = () => {
               Featured <span className="gradient-text-blue">Projects</span>
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              A selection of projects showcasing my expertise in e-commerce, automation, and full-stack development.
+              A selection of projects showcasing our expertise in e-commerce, automation, and full-stack development.
             </p>
           </div>
 

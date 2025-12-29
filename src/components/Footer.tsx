@@ -7,13 +7,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
           <p className="text-muted-foreground text-sm">
-            © 2025 <span className="text-foreground font-medium">Hemali Savaliya</span>. All Rights Reserved.
+            © 2025 <span className="text-foreground font-medium">Savaliya Digital Solutions</span>. Owned & Operated by <span className="text-foreground font-medium">Bhagvan Savaliya</span>.
           </p>
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
             <a
-              href="https://linkedin.com/in/hemali-savaliya"
+              href="https://linkedin.com/company/savaliya-digital"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -22,7 +22,7 @@ const Footer = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="https://github.com/hemali-savaliya"
+              href="https://github.com/savaliya-digital"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -31,7 +31,7 @@ const Footer = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="mailto:hello@hemali.dev"
+              href="mailto:hello@savaliya.digital"
               className="text-muted-foreground hover:text-primary transition-colors"
               aria-label="Email"
             >

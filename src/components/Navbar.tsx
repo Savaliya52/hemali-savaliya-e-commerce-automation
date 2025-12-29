@@ -33,7 +33,7 @@ const Navbar = () => {
             }}
             className="text-xl font-bold text-foreground hover:text-primary transition-colors"
           >
-            Hemali.dev
+            Savaliya Digital
           </a>
 
           {/* Desktop Navigation */}

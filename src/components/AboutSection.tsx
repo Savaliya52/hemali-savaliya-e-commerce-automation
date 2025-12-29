@@ -1,56 +1,75 @@
 import { User } from "lucide-react";
 
+const teamMembers = [
+  {
+    name: "Bhagvan Savaliya",
+    title: "Founder & Operations Director",
+    description: "Managing business operations, billing, and client relations to ensure seamless project delivery.",
+    color: "primary",
+  },
+  {
+    name: "Hemali Savaliya",
+    title: "Lead Full-Stack Engineer",
+    description: "Specializing in Shopify architecture, MERN stack, and n8n automation workflows.",
+    color: "secondary",
+  },
+];
+
 const AboutSection = () => {
   return (
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Image Placeholder */}
-            <div className="relative">
-              <div className="aspect-square rounded-2xl bg-card border border-border overflow-hidden relative">
-                {/* Placeholder for headshot */}
-                <div className="absolute inset-0 flex items-center justify-center bg-muted">
-                  <User className="w-32 h-32 text-muted-foreground/50" />
-                </div>
-                {/* Decorative elements */}
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-secondary/20 rounded-full blur-2xl" />
-              </div>
-              {/* Floating badge */}
-              <div className="absolute -bottom-4 -right-4 bg-card border border-border rounded-xl px-4 py-3 shadow-lg">
-                <div className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded-full bg-secondary animate-pulse" />
-                  <span className="text-sm font-medium text-foreground">Open to Work</span>
-                </div>
-              </div>
-            </div>
+          {/* Header */}
+          <div className="text-center mb-16">
+            <span className="text-primary text-sm font-medium uppercase tracking-wider">Our Team</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mt-2">
+              Leadership <span className="gradient-text-blue">Team</span>
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+              A dedicated team combining business expertise with technical excellence to deliver exceptional results.
+            </p>
+          </div>
 
-            {/* Content */}
-            <div>
-              <span className="text-primary text-sm font-medium uppercase tracking-wider">About Me</span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mt-2 mb-6">
-                Hi, I am <span className="gradient-text-blue">Hemali Savaliya</span>.
-              </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                I am a <span className="text-foreground font-medium">Computer Science Engineer</span> bridging the gap between technical development and business growth. Unlike traditional developers, I understand <span className="text-foreground font-medium">Meta Ads, ROI, and Operational Efficiency</span>.
-              </p>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                My approach combines clean code with marketing insights to build systems that don't just work—they <span className="gradient-text-green font-medium">generate revenue</span>.
-              </p>
+          {/* Team Cards */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {teamMembers.map((member, index) => (
+              <div
+                key={member.name}
+                className="group relative bg-card border border-border rounded-2xl p-8 card-hover overflow-hidden"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {/* Background gradient on hover */}
+                <div className={`absolute inset-0 bg-gradient-to-br from-${member.color}/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+                
+                <div className="relative z-10">
+                  {/* Avatar Placeholder */}
+                  <div className="relative mb-6">
+                    <div className={`w-24 h-24 rounded-full bg-${member.color}/10 border-2 border-${member.color}/20 flex items-center justify-center mx-auto`}>
+                      <User className={`w-10 h-10 text-${member.color}`} />
+                    </div>
+                    {/* Status dot */}
+                    <div className={`absolute bottom-1 right-1/2 translate-x-8 w-4 h-4 rounded-full bg-secondary border-2 border-card`} />
+                  </div>
 
-              {/* Quick facts */}
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <div className="text-2xl font-bold text-foreground">B.E.</div>
-                  <div className="text-sm text-muted-foreground">Computer Science</div>
+                  {/* Content */}
+                  <div className="text-center">
+                    <h3 className="text-xl font-semibold text-foreground mb-1">
+                      {member.name}
+                    </h3>
+                    <p className={`text-${member.color} text-sm font-medium mb-4`}>
+                      {member.title}
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {member.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <div className="text-2xl font-bold gradient-text-blue">Full Stack</div>
-                  <div className="text-sm text-muted-foreground">Development Focus</div>
-                </div>
+
+                {/* Decorative glow */}
+                <div className={`absolute -bottom-16 -right-16 w-32 h-32 bg-${member.color}/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
