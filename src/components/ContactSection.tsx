@@ -18,19 +18,19 @@ const ContactSection = () => {
           <div className="grid sm:grid-cols-3 gap-6 mb-12">
             {/* Email */}
             <a
-              href="mailto:hello@savaliya.digital"
+              href="mailto:savaliyasolutions@gmail.com"
               className="group bg-card border border-border rounded-xl p-6 card-hover text-center"
             >
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4 group-hover:bg-primary/20 transition-colors">
                 <Mail className="w-5 h-5 text-primary" />
               </div>
               <h3 className="text-foreground font-medium mb-1">Email</h3>
-              <p className="text-muted-foreground text-sm">hello@savaliya.digital</p>
+              <p className="text-muted-foreground text-sm">savaliyasolutions@gmail.com</p>
             </a>
 
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com/company/savaliya-digital"
+              href="https://www.linkedin.com/in/hemali-savaliya/"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-card border border-border rounded-xl p-6 card-hover text-center"
@@ -44,7 +44,7 @@ const ContactSection = () => {
 
             {/* GitHub */}
             <a
-              href="https://github.com/savaliya-digital"
+              href="https://github.com/Savaliya52"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-card border border-border rounded-xl p-6 card-hover text-center"
