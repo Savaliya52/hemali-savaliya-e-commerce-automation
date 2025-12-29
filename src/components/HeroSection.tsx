@@ -63,15 +63,15 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-border max-w-lg mx-auto animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             <div>
-              <div className="text-2xl sm:text-3xl font-bold text-foreground">50+</div>
-              <div className="text-sm text-muted-foreground">Projects</div>
+              <div className="text-2xl sm:text-3xl font-bold text-foreground">10+</div>
+              <div className="text-sm text-muted-foreground">Projects Delivered</div>
             </div>
             <div>
-              <div className="text-2xl sm:text-3xl font-bold text-foreground">3+</div>
+              <div className="text-2xl sm:text-3xl font-bold text-foreground">1+</div>
               <div className="text-sm text-muted-foreground">Years Exp</div>
             </div>
             <div>
-              <div className="text-2xl sm:text-3xl font-bold gradient-text-green">$1M+</div>
+              <div className="text-2xl sm:text-3xl font-bold gradient-text-green">$3,000+</div>
               <div className="text-sm text-muted-foreground">Revenue Generated</div>
             </div>
           </div>
