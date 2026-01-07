@@ -3,7 +3,7 @@ import { User } from "lucide-react";
 const teamMembers = [
   {
     name: "Bhagvan Savaliya",
-    title: "Founder & Operations Director",
+    title: "Founder & Owner",
     description: "Managing business operations, billing, and client relations to ensure seamless project delivery.",
     color: "primary",
   },
@@ -26,10 +26,20 @@ const AboutSection = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mt-2">
               Leadership <span className="gradient-text-blue">Team</span>
             </h2>
-            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              A dedicated team combining business expertise with technical excellence to deliver exceptional results.
+          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+            A dedicated team combining business expertise with technical excellence to deliver exceptional results.
+          </p>
+
+          {/* Legal & Business Information */}
+          <div className="mt-8 p-6 bg-card/50 border border-border rounded-xl">
+            <h3 className="text-foreground font-semibold mb-3">Legal & Business Information</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Savaliya Solutions is a sole proprietorship owned and operated by Bhagvanbhai Savaliya. 
+              The owner is authorized to manage, receive, and control all client payments and financial 
+              transactions on behalf of the business.
             </p>
           </div>
+        </div>
 
           {/* Team Cards */}
           <div className="grid md:grid-cols-2 gap-8">

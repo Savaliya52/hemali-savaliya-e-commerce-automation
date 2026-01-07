@@ -6,9 +6,10 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
-          <p className="text-muted-foreground text-sm">
-            © 2025 <span className="text-foreground font-medium">Savaliya Solutions</span>. Owned & Operated by <span className="text-foreground font-medium">Bhagvan Savaliya</span>.
-          </p>
+          <div className="text-muted-foreground text-sm text-center md:text-left">
+            <p>© 2026 <span className="text-foreground font-medium">Savaliya Solutions</span>. All rights reserved.</p>
+            <p className="mt-1">Savaliya Solutions is a sole proprietorship owned and operated by Bhagvanbhai Savaliya.</p>
+          </div>
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
