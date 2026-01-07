@@ -57,6 +57,16 @@ const ContactSection = () => {
             </a>
           </div>
 
+          {/* Business Information */}
+          <div className="bg-card border border-border rounded-xl p-6 mb-8">
+            <div className="text-center space-y-1">
+              <p className="text-foreground font-semibold">Savaliya Solutions</p>
+              <p className="text-muted-foreground text-sm">Owned & Operated by Bhagvanbhai Savaliya</p>
+              <p className="text-muted-foreground text-sm">Business Type: Sole Proprietorship</p>
+              <p className="text-muted-foreground text-sm">Country: India</p>
+            </div>
+          </div>
+
           {/* Location */}
           <div className="inline-flex items-center gap-2 text-muted-foreground">
             <MapPin className="w-4 h-4" />
