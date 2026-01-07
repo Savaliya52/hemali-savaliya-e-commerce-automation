@@ -37,7 +37,7 @@ const HeroSection = () => {
 
           {/* Sub-headline */}
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <span className="text-foreground font-medium">Savaliya Digital</span> connects code, marketing, and operations. We build high-performance systems for scaling brands.
+            <span className="text-foreground font-medium">Savaliya Solutions</span> connects code, marketing, and operations. We build high-performance systems for scaling brands.
           </p>
 
           {/* CTAs */}
