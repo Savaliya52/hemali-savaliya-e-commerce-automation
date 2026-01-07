@@ -33,7 +33,7 @@ const Navbar = () => {
             }}
             className="text-xl font-bold text-foreground hover:text-primary transition-colors"
           >
-            Savaliya Digital
+            Savaliya Solutions
           </a>
 
           {/* Desktop Navigation */}
