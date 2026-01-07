@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
           <p className="text-muted-foreground text-sm">
-            © 2025 <span className="text-foreground font-medium">Savaliya Digital Solutions</span>. Owned & Operated by <span className="text-foreground font-medium">Bhagvan Savaliya</span>.
+            © 2025 <span className="text-foreground font-medium">Savaliya Solutions</span>. Owned & Operated by <span className="text-foreground font-medium">Bhagvan Savaliya</span>.
           </p>
 
           {/* Social Links */}
